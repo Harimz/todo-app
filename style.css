@@ -18,12 +18,19 @@ input {
   box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
   font-size: 1.5rem;
   color: white;
-  background: transparent;
-  border-bottom: 1px solid white;
+  background: #003049;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
 }
 
 input:focus {
   outline: none;
+}
+
+.container {
+  margin-top: 5rem;
+  max-width: 30rem;
+  width: 90%;
 }
 
 .todo {
@@ -31,22 +38,25 @@ input:focus {
 }
 
 ul {
-  margin-top: 4rem;
   background: #003049;
-  height: 30rem;
-  width: 30rem;
+  max-height: 30rem;
   box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
   overflow: scroll;
+  border-radius: 0.5rem;
 }
 
 li {
   padding: 1rem;
   background: #003049;
-  margin-top: 1rem;
   color: white;
   font-size: 1.45rem;
   display: flex;
   justify-content: space-between;
+}
+
+li.checked p {
+  text-decoration: line-through;
+  color: gray;
 }
 
 ul::-webkit-scrollbar {
